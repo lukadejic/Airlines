@@ -14,7 +14,7 @@ public class DBConnection {
     public DBConnection() {
         String url = "jdbc:mysql://localhost:3306/ABP";
         try {            
-            connection = DriverManager.getConnection(url,"root","");
+            connection = DriverManager.getConnection(url,"root","root");
             connection.setAutoCommit(false);
         } catch (SQLException ex) {
             Logger.getLogger(DBConnection.class.getName()).log(Level.SEVERE, null, ex);

@@ -220,41 +220,41 @@ public class SignUpForm extends javax.swing.JFrame {
         String email = jTextFieldEmail.getText();
         String phone = jTextFieldPhone.getText();
         String name = jTextFieldName.getText();
-        
-        if(!phoneValidation(phone)){
-            JOptionPane.showMessageDialog(this, 
-                    "Invalid phone format",
-                    "Error", JOptionPane.ERROR_MESSAGE); 
-            return;
-        }
-        
-        if(!confifrmPassword.equals(password)){
-           JOptionPane.showMessageDialog(this, 
-                    "Confirmed password must be the same",
-                    "Error", JOptionPane.ERROR_MESSAGE); 
-           return;
-        }
-        
-        if (username.isEmpty() || password.isEmpty() || email.isEmpty() || phone.isEmpty() || name.isEmpty()){
-            JOptionPane.showMessageDialog(this, 
-                    "All fields must be filled",
-                    "Error", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-        
-        if(!emailValidation(email)){
-            JOptionPane.showMessageDialog(this, 
-                    "Invalid email format, please provide valid email address",
-                    "Error", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-        
-        if(name.contains(",.+-_")){
-            JOptionPane.showMessageDialog(this, 
-                    "Name cannot contain symbols (,.+-_)",
-                    "Error", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
+//        
+//        if(!phoneValidation(phone)){
+//            JOptionPane.showMessageDialog(this, 
+//                    "Invalid phone format",
+//                    "Error", JOptionPane.ERROR_MESSAGE); 
+//            return;
+//        }
+//        
+//        if(!confifrmPassword.equals(password)){
+//           JOptionPane.showMessageDialog(this, 
+//                    "Confirmed password must be the same",
+//                    "Error", JOptionPane.ERROR_MESSAGE); 
+//           return;
+//        }
+//        
+//        if (username.isEmpty() || password.isEmpty() || email.isEmpty() || phone.isEmpty() || name.isEmpty()){
+//            JOptionPane.showMessageDialog(this, 
+//                    "All fields must be filled",
+//                    "Error", JOptionPane.ERROR_MESSAGE);
+//            return;
+//        }
+//        
+//        if(!emailValidation(email)){
+//            JOptionPane.showMessageDialog(this, 
+//                    "Invalid email format, please provide valid email address",
+//                    "Error", JOptionPane.ERROR_MESSAGE);
+//            return;
+//        }
+//        
+//        if(name.contains(",.+-_")){
+//            JOptionPane.showMessageDialog(this, 
+//                    "Name cannot contain symbols (,.+-_)",
+//                    "Error", JOptionPane.ERROR_MESSAGE);
+//            return;
+//        }
         
         if(Controller.getInstace().signUp(username,password,email,phone,name)){
             try {

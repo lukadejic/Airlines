@@ -1,4 +1,3 @@
-
 package forms;
 
 import controller.Controller;
@@ -6,29 +5,25 @@ import javax.swing.ButtonGroup;
 import javax.swing.JOptionPane;
 
 public class AddFlightForm extends javax.swing.JFrame {
-    
 
     public AddFlightForm() {
         initComponents();
         setUpForm();
     }
 
-
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jLabel5 = new javax.swing.JLabel();
-        jDateChooserDepart1 = new com.toedter.calendar.JDateChooser();
+        jDateChooserDepart1 = new org.netbeans.modules.form.InvalidComponent();
         jPanel1 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jTextFieldFrom = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         jTextFieldTo = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jDateChooserDepart = new com.toedter.calendar.JDateChooser();
         jLabel6 = new javax.swing.JLabel();
-        jDateChooserReturn = new com.toedter.calendar.JDateChooser();
         jTextFieldPrice = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         JButtonAdd = new rojerusan.RSMaterialButtonRectangle();
@@ -38,16 +33,6 @@ public class AddFlightForm extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Depart");
-
-        jDateChooserDepart1.setBackground(new java.awt.Color(204, 204, 255));
-        jDateChooserDepart1.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jDateChooserDepart1FocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                jDateChooserDepart1FocusLost(evt);
-            }
-        });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setForeground(java.awt.Color.white);
@@ -81,29 +66,9 @@ public class AddFlightForm extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Depart");
 
-        jDateChooserDepart.setBackground(new java.awt.Color(204, 204, 255));
-        jDateChooserDepart.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jDateChooserDepartFocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                jDateChooserDepartFocusLost(evt);
-            }
-        });
-
         jLabel6.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Return");
-
-        jDateChooserReturn.setBackground(new java.awt.Color(204, 204, 255));
-        jDateChooserReturn.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jDateChooserReturnFocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                jDateChooserReturnFocusLost(evt);
-            }
-        });
 
         jTextFieldPrice.setBackground(new java.awt.Color(204, 204, 255));
         jTextFieldPrice.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
@@ -156,14 +121,8 @@ public class AddFlightForm extends javax.swing.JFrame {
                                     .addComponent(jTextFieldTo, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(50, 50, 50)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jDateChooserDepart, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jDateChooserReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(24, 24, 24)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -172,35 +131,25 @@ public class AddFlightForm extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jRadioButtonOneWay))
                             .addComponent(JButtonAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(0, 51, Short.MAX_VALUE))
+                .addGap(0, 297, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                .addGap(39, 39, 39)
-                                .addComponent(jDateChooserDepart, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jRadioButtonReturnTrip)
-                                    .addComponent(jRadioButtonOneWay))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jTextFieldFrom, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel4))))
-                        .addGap(38, 38, 38)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextFieldTo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel6)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(122, 122, 122)
-                        .addComponent(jDateChooserReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jRadioButtonReturnTrip)
+                    .addComponent(jRadioButtonOneWay))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextFieldFrom, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4))
+                .addGap(38, 38, 38)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextFieldTo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextFieldPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -248,32 +197,29 @@ public class AddFlightForm extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jDateChooserReturnFocusLost
 
-    private void jTextFieldFromActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldFromActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextFieldFromActionPerformed
+    private void JButtonAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JButtonAddActionPerformed
+        if (jTextFieldTo.getText().isEmpty()
+            || jTextFieldFrom.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(this,
+                "Please fill all the fields", "", JOptionPane.INFORMATION_MESSAGE);
+            return;
+        }
+
+        addFlight();
+    }//GEN-LAST:event_JButtonAddActionPerformed
 
     private void jTextFieldPriceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldPriceActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldPriceActionPerformed
 
-    private void JButtonAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JButtonAddActionPerformed
-        if(jTextFieldTo.getText().isEmpty() || 
-                jTextFieldFrom.getText().isEmpty() ||
-                jDateChooserDepart.getDate() == null){
-            JOptionPane.showMessageDialog(this, 
-                    "Please fill all the fields", "", JOptionPane.INFORMATION_MESSAGE);
-            return;
-        }
-        
-        addFlight();
-    }//GEN-LAST:event_JButtonAddActionPerformed
+    private void jTextFieldFromActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldFromActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldFromActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private rojerusan.RSMaterialButtonRectangle JButtonAdd;
-    private com.toedter.calendar.JDateChooser jDateChooserDepart;
-    private com.toedter.calendar.JDateChooser jDateChooserDepart1;
-    private com.toedter.calendar.JDateChooser jDateChooserReturn;
+    private org.netbeans.modules.form.InvalidComponent jDateChooserDepart1;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -291,18 +237,17 @@ public class AddFlightForm extends javax.swing.JFrame {
     private void addFlight() {
         String from = jTextFieldFrom.getText();
         String to = jTextFieldTo.getText();
-        String departDate = jDateChooserDepart.getDate().toString();
+        // String departDate = jDateChooserDepart.getDate().toString();
         String returnDate = null;
-        
-        if(jDateChooserReturn.getDate() != null && jDateChooserReturn != null){
-            returnDate = jDateChooserReturn.getDate().toString();
-        }
-        
+
+//        if(jDateChooserReturn.getDate() != null && jDateChooserReturn != null){
+//            returnDate = jDateChooserReturn.getDate().toString();
+//        }
         double price = Double.parseDouble(jTextFieldPrice.getText());
-        boolean isAddedFlight  = Controller.getInstace().addFlight(from,to,departDate,returnDate,price);
-        
-        if(isAddedFlight){
-            JOptionPane.showMessageDialog(this, 
+        boolean isAddedFlight = Controller.getInstace().addFlight(from, to, "", returnDate, price);
+
+        if (isAddedFlight) {
+            JOptionPane.showMessageDialog(this,
                     "Flight added succesfuly", "", JOptionPane.INFORMATION_MESSAGE);
             this.dispose();
         }
@@ -313,9 +258,9 @@ public class AddFlightForm extends javax.swing.JFrame {
         group.add(jRadioButtonReturnTrip);
         group.add(jRadioButtonOneWay);
         jRadioButtonReturnTrip.setSelected(true);
-        
-        if(jRadioButtonOneWay.isSelected()){
-            jDateChooserReturn.setVisible(false);
+
+        if (jRadioButtonOneWay.isSelected()) {
+            //        jDateChooserReturn.setVisible(false);
             this.revalidate();
             this.repaint();
         }

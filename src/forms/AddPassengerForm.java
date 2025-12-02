@@ -48,7 +48,6 @@ public class AddPassengerForm extends javax.swing.JInternalFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jDateChooser = new com.toedter.calendar.JDateChooser();
         jRadioButtonMale = new javax.swing.JRadioButton();
         jRadioButtonFemale = new javax.swing.JRadioButton();
         jTextFieldBrojTelefona = new javax.swing.JTextField();
@@ -142,9 +141,6 @@ public class AddPassengerForm extends javax.swing.JInternalFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(23, 23, 23)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                        .addComponent(jDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addContainerGap(467, Short.MAX_VALUE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                             .addGroup(layout.createSequentialGroup()
@@ -204,10 +200,8 @@ public class AddPassengerForm extends javax.swing.JInternalFrame {
                                 .addComponent(jLabel4)
                                 .addComponent(jTextFieldAdresa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5)
-                            .addComponent(jDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
+                        .addComponent(jLabel5)
+                        .addGap(20, 20, 20)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel8)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -259,7 +253,6 @@ public class AddPassengerForm extends javax.swing.JInternalFrame {
     private javax.swing.JButton jButtonDodaj;
     private javax.swing.JButton jButtonPonisti;
     private javax.swing.JButton jButtonSlika;
-    private com.toedter.calendar.JDateChooser jDateChooser;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -322,7 +315,7 @@ public class AddPassengerForm extends javax.swing.JInternalFrame {
         String passport = jTextFieldBrojPasosa.getText();
         String address = jTextFieldAdresa.getText();
         DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
-        String date = df.format(jDateChooser.getDate());
+       // String date = df.format(jDateChooser.getDate());
         String gender;
         
         if (jRadioButtonMale.isSelected()){
@@ -349,7 +342,7 @@ public class AddPassengerForm extends javax.swing.JInternalFrame {
         jTextFieldBrojPasosa.setText("");
         jTextFieldBrojTelefona.setText("");
         jTextFieldAdresa.setText("");
-        jDateChooser.setDate(null);
+     //   jDateChooser.setDate(null);
         jRadioButtonMale.setSelected(false);
         jRadioButtonFemale.setSelected(false);
     }
@@ -364,14 +357,14 @@ public class AddPassengerForm extends javax.swing.JInternalFrame {
             JOptionPane.showMessageDialog(this, "Input fields cannot be empty");
             return false;
         }
-        if(jDateChooser.getDate() != null){
-            Date selectedDate = jDateChooser.getDate();
-            LocalDate date = selectedDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-
-            if(date.getYear() > 2006)
-            JOptionPane.showMessageDialog(this, "Passanger must be 18 years old or older");
-            return false;
-        }
+//        if(jDateChooser.getDate() != null){
+//            Date selectedDate = jDateChooser.getDate();
+//            LocalDate date = selectedDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+//
+//            if(date.getYear() > 2006)
+//            JOptionPane.showMessageDialog(this, "Passanger must be 18 years old or older");
+//            return false;
+//        }
         
         
         return true;
